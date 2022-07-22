@@ -1,0 +1,138 @@
+<html>
+    <head>
+
+        <style>
+            .three-one-blog-section{
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                max-height: 100vh;
+                max-width: 1150px;
+                margin: auto;
+                gap: 15px;
+            }
+
+            .three-one-blog-section .blog_item{
+                height: 100%;
+            }
+
+            .three-one-blog-section .blog_item img{
+                height: 100%;
+                width: 100%;
+            }
+
+            .three-one-blog-section .blog_item .image-wrap{
+                position: relative;
+            }
+
+            .three-one-blog-section .blog_item .blog_item_container{
+                height: 100%;
+                position: relative;
+            }
+
+            .three-one-blog-section .blog_item .image-wrap.text-spacing:before {
+                content: '';
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(180deg, transparent, #0000008f);
+                top: 0;
+                left: 0;
+                position: absolute;
+            }
+
+            .three-one-blog-section .blog_item_container .blog-link-text{
+                position: absolute;
+                bottom: 0;
+                box-sizing: border-box;
+                padding: 0 30px;
+                color: #fff;
+            }
+
+            .three-one-blog-section .blog_item_container .blog-link-text h2{
+                font-size: 21px;
+                font-weight: 100;
+                overflow: hidden;
+                margin: 0px;
+                height: 90px;
+                display: flex;
+                align-items: center;
+
+            }
+
+            .three-one-blog-section .blog_item_container .blog-link-text h2 a{
+                text-decoration: none;
+                color: inherit;
+                position: relative;
+                display: block;
+                transition: 0.4s ease-out;
+
+            }
+
+            .three-one-blog-section .blog_item_container .blog-link-text h2 a:before{
+                content:'';
+                position: absolute;
+                width: 40%;
+                height: 3px;
+                left: -40%;
+                bottom: -17px;
+                background-color: rgb(255, 255, 255);
+                transition: 0.4s ease-out;
+            }
+
+            .three-one-blog-section .blog_item_container:hover .blog-link-text h2 a:before{
+                left: 0;
+            }
+            .three-one-blog-section .blog_item_container:hover .blog-link-text h2 a{
+                transform: translateY(-25px);
+            }
+
+            @media (max-width: 767px){
+                .three-one-blog-section{
+                    grid-template-columns: 1fr;
+                    padding: 0 32px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="shopify-section index-section">
+            <div class="page-width">
+                <div class="three-one-blog-section">
+                    <div class="blog_item">
+                        <div class="blog_item_container">
+                            <a href="#">
+                                <div class="image-wrap text-spacing">
+                                    <img class="lazyautosizes lazyloaded" src="https://luxiders.com/wp-content/uploads/2022/07/kristina-flour-BcjdbyKWquw-unsplash-960x720.jpg">
+                                </div>
+                            </a>
+                            <div class="blog-link-text">
+                                <h2>
+                                    <a href="#">
+                                            Ethical Knitwear
+                                    </a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog_item">
+                        <div class="blog_item_container">
+                            <a href="#">
+                                <div class="image-wrap text-spacing">
+                                    <img class="lazyautosizes lazyloaded" src="https://luxiders.com/wp-content/uploads/2022/07/pratiksha-mohanty-V0xp-dTS3z0-unsplash-380x600.jpg">
+                                </div>
+                            </a>
+                            <div class="blog-link-text">
+                                <h2>
+                                    <a href="#">
+                                            Ethical Knitwear
+                                    </a>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
