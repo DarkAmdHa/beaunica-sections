@@ -1,0 +1,172 @@
+<html>
+    <head>
+
+        <style>
+            .one-one-blog-section{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                max-height: 600px;
+                overflow: hidden;
+                max-width: 1150px;
+                margin: auto;
+                gap: 15px;
+            }
+
+            .one-one-blog-section .blog_item{
+                height: auto;
+            }
+
+            .one-one-blog-section .blog_item img{
+                width: 100%;
+            }
+
+            .one-one-blog-section .blog_item .image-wrap{
+                position: relative;
+            }
+
+            .one-one-blog-section .blog_item .blog_item_container{
+                height: auto;
+                position: relative;
+            }
+
+
+
+            .one-one-blog-section .blog_item_container .blog-post-description{
+                padding: 10px 0;
+            }
+
+            .one-one-blog-section .blog_item_container .blog-post-category a{
+                margin-bottom: 5px;
+                font-size: 12px;
+                color: #808080;
+                transition: .5s ease;
+                text-transform: uppercase;
+                line-height: 30px;
+            }
+
+            .one-one-blog-section .blog_item_container .blog-post-category a:hover{
+                color: #000;
+            }
+
+            .one-one-blog-section .blog_item_container .blog-post-title a{
+                color: #4e4e4e;
+                transition: .5s ease;
+
+            }
+
+            .one-one-blog-section .blog_item_container .blog-post-title a:hover{
+                color: #000;
+
+            }
+            
+            .one-one-blog-section .blog_item_container .blog-post-description a{
+                text-decoration: none;   
+            }
+
+            .one-one-blog-section .blog_item_container .blog-post-description h2{
+                font-size: 17px;
+                font-weight: 100;
+                overflow: hidden;
+                margin: 0px;
+                width: fit-content;
+
+            }
+
+            .one-one-blog-section .blog_item_container .blog-post-description h2 a{
+                text-decoration: none;
+                position: relative;
+                display: block;
+                transition: 0.4s ease-out;
+
+            }
+
+            .one-one-blog-section .blog_item_container .blog-post-description h2 a:hover{
+                color: #000;
+            }
+
+            .one-one-blog-section .image_frame{
+                position: relative;
+            }
+
+            .one-one-blog-section .image_frame:after{
+                content: "";
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 3;
+                background: rgba(0,0,0,.2);
+                filter: alpha(opacity=0);
+                opacity: 0;
+                transition: all .3s ease-in-out;
+            }
+
+            .one-one-blog-section .image_frame:hover:after{
+                filter: alpha(opacity=100);
+                opacity: 1;
+            }
+
+
+            @media (max-width: 767px){
+                .one-one-blog-section{
+                    grid-template-columns: 1fr;
+                    padding: 0 32px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="shopify-section index-section">
+            <div class="page-width">
+                <div class="one-one-blog-section">
+                    <div class="blog_item">
+                        <div class="blog_item_container">
+                            <a href="#" class="image_frame">
+                                <div class="image-wrap text-spacing">
+                                    <img class="lazyautosizes lazyloaded" src="https://luxiders.com/wp-content/uploads/2022/07/kristina-flour-BcjdbyKWquw-unsplash-960x720.jpg">
+                                </div>
+                            </a>
+                            <div class="blog-post-description">
+                                <div class="blog-post-category">
+                                    <a href="https://luxiders.com/category/sustainable-luxury-fashion/editorial/">Editorial</a>
+                                </div>
+                                <div class="blog-post-title">
+                                    <h2>
+                                        <a href="#">
+                                                Ethical Knitwear
+                                        </a>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog_item">
+                        <div class="blog_item_container">
+                            <a href="#" class="image_frame">
+                                <div class="image-wrap text-spacing">
+                                    <img class="lazyautosizes lazyloaded" src="https://luxiders.com/wp-content/uploads/2022/07/kristina-flour-BcjdbyKWquw-unsplash-960x720.jpg">
+                                </div>
+                            </a>
+                            <div class="blog-post-description">
+                                <div class="blog-post-category">
+                                    <a href="https://luxiders.com/category/sustainable-luxury-fashion/editorial/">Editorial</a>
+                                </div>
+                                <div class="blog-post-title">
+                                    <h2>
+                                        <a href="#">
+                                                Ethical Knitwear
+                                        </a>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
