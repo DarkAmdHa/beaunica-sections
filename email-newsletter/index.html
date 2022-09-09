@@ -1,0 +1,105 @@
+<html>
+    <head>
+
+        <style>
+            .custom-newsletter{
+                display: flex;
+                padding: 0 40px;    
+            }
+
+            .custom-newsletter-text,
+            .custom-newsletter-form{
+                width: 50%;
+            }
+
+            .custom-newsletter-text h4{
+                text-align: right;
+                margin-right: 65px;
+                font-weight: 100;
+            }
+
+            .custom-newsletter-form{
+                display: flex;
+                gap: 15px;
+                margin: 0;
+                align-items: center;
+            }
+
+            .custom-email-input-container{
+                position: relative;
+            }
+
+
+            .customEmailInputLabel{
+                position: absolute;
+                font-size: 14px;
+                transition: 0.5s ease;
+            }
+
+            #customEmailInput{
+                width: 100%;
+                border: none;
+                border-bottom: 1px solid #d8d8d8;
+                min-width: 300px;
+                padding: 5px;
+            }
+
+            .customEmailInputLabel{
+                position: absolute;
+                font-size: 17px;
+                transition: 0.5s ease;
+                color: gray;
+                top: 5px;
+                left: 5px;
+            }
+
+            #customEmailInput:focus {
+                outline: none;
+            }
+
+            #customEmailInput:focus + .customEmailInputLabel{
+                font-size: 13px;
+                top: -8px;
+            }
+
+            .custom-newsletter-form-submit-btn{
+                background: #fff;
+                border: 1px solid #c1c1c1;
+                padding: 5px 20px;
+                font-size: 14px;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: 0.5s ease;
+            }
+
+            .custom-newsletter-form-submit-btn:hover{
+                background: #f7f7f7;
+            }
+
+            input#customEmailInput:not(:placeholder-shown) + label {
+                font-size: 13px;
+                top: -8px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="shopify-section index-section">
+            <div class="page-width">
+                <div class="custom-newsletter">
+                    <div class="custom-newsletter-text">
+                        <h4>Receive the best in sustainable fashion and lifestyle straight to your inbox!</h4>
+                    </div>
+                    <form class="custom-newsletter-form">
+                        <div class="custom-email-input-container">
+                            <input type="email" required name="email" id="customEmailInput" placeholder=" ">
+                            <label class='customEmailInputLabel' for="customEmailInput">Email</label>
+                        </div>
+                        <input type="submit" value="Subscribe" class="custom-newsletter-form-submit-btn">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

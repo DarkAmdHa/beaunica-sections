@@ -1,0 +1,290 @@
+<html>
+    <head>
+
+        <style>
+            .latest-blog-articles-section{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                overflow: hidden;
+                max-width: 1150px;
+                margin: auto;
+                gap: 15px;
+            }
+
+            .latest-blog-articles-section .blog_item{
+                height: auto;
+            }
+
+            .latest-blog-articles-section .blog_item img{
+                width: 100%;
+            }
+
+            .latest-blog-articles-section .blog_item .image-wrap{
+                position: relative;
+            }
+
+            .latest-blog-articles-section .blog_item .blog_item_container{
+                height: auto;
+                position: relative;
+            }
+
+
+
+            .latest-blog-articles-section .blog_item_container .blog-post-description{
+                padding: 10px 0;
+            }
+
+            .latest-blog-articles-section .blog_item_container .blog-post-category a{
+                margin-bottom: 5px;
+                font-size: 12px;
+                color: #808080;
+                transition: .5s ease;
+                text-transform: uppercase;
+                line-height: 30px;
+            }
+
+            .latest-blog-articles-section .blog_item_container .blog-post-category a:hover{
+                color: #000;
+            }
+
+            .latest-blog-articles-section .blog_item_container .blog-post-title a{
+                color: #4e4e4e;
+                transition: .5s ease;
+
+            }
+
+            .latest-blog-articles-section .blog_item_container .blog-post-title a:hover{
+                color: #000;
+
+            }
+            
+            .latest-blog-articles-section .blog_item_container .blog-post-description a{
+                text-decoration: none;   
+            }
+
+            .latest-blog-articles-section .blog_item_container .blog-post-description h2{
+                font-size: 17px;
+                font-weight: 100;
+                overflow: hidden;
+                margin: 0px;
+                width: fit-content;
+
+            }
+
+            .latest-blog-articles-section .blog_item_container .blog-post-description h2 a{
+                text-decoration: none;
+                position: relative;
+                display: block;
+                transition: 0.4s ease-out;
+
+            }
+
+            .latest-blog-articles-section .blog_item_container .blog-post-description h2 a:hover{
+                color: #000;
+            }
+
+            .latest-blog-articles-section .image_frame{
+                position: relative;
+            }
+
+            .latest-blog-articles-section .image_frame:after{
+                content: "";
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 3;
+                background: rgba(0,0,0,.2);
+                filter: alpha(opacity=0);
+                opacity: 0;
+                transition: all .3s ease-in-out;
+            }
+
+            .latest-blog-articles-section .image_frame:hover:after{
+                filter: alpha(opacity=100);
+                opacity: 1;
+            }
+
+            .page-load-more{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                justify-content: center;
+                text-decoration: none;
+                width: 160px;
+                margin: auto;
+                border: 1px solid gray;
+                padding: 10px;
+                border-radius: 25px;
+                transition: 0.5s ease;
+            }
+
+            .page-load-more .button_icon svg{
+                width: 25px;
+                height: 25px;   
+            }
+
+            .page-load-more:hover{
+                background-color: #f3f3f3;
+            }
+
+            .page-load-more:active,
+            .page-load-more:focus{
+                color: inherit;
+            }
+
+
+            @media (max-width: 767px){
+                .latest-blog-articles-section{
+                    grid-template-columns: 1fr;
+                    padding: 0 32px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="shopify-section index-section">
+            <div class="page-width">
+                <div class="latest-blog-articles-section">
+                    <div class="blog_item">
+                        <div class="blog_item_container">
+                            <a href="#" class="image_frame">
+                                <div class="image-wrap text-spacing">
+                                    <img class="lazyautosizes lazyloaded" src="https://luxiders.com/wp-content/uploads/2022/07/kristina-flour-BcjdbyKWquw-unsplash-960x720.jpg">
+                                </div>
+                            </a>
+                            <div class="blog-post-description">
+                                <div class="blog-post-category">
+                                    <a href="https://luxiders.com/category/sustainable-luxury-fashion/editorial/">Editorial</a>
+                                </div>
+                                <div class="blog-post-title">
+                                    <h2>
+                                        <a href="#">
+                                                Ethical Knitwear
+                                        </a>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog_item">
+                        <div class="blog_item_container">
+                            <a href="#" class="image_frame">
+                                <div class="image-wrap text-spacing">
+                                    <img class="lazyautosizes lazyloaded" src="https://luxiders.com/wp-content/uploads/2022/07/kristina-flour-BcjdbyKWquw-unsplash-960x720.jpg">
+                                </div>
+                            </a>
+                            <div class="blog-post-description">
+                                <div class="blog-post-category">
+                                    <a href="https://luxiders.com/category/sustainable-luxury-fashion/editorial/">Editorial</a>
+                                </div>
+                                <div class="blog-post-title">
+                                    <h2>
+                                        <a href="#">
+                                                Ethical Knitwear
+                                        </a>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog_item">
+                        <div class="blog_item_container">
+                            <a href="#" class="image_frame">
+                                <div class="image-wrap text-spacing">
+                                    <img class="lazyautosizes lazyloaded" src="https://luxiders.com/wp-content/uploads/2022/07/kristina-flour-BcjdbyKWquw-unsplash-960x720.jpg">
+                                </div>
+                            </a>
+                            <div class="blog-post-description">
+                                <div class="blog-post-category">
+                                    <a href="https://luxiders.com/category/sustainable-luxury-fashion/editorial/">Editorial</a>
+                                </div>
+                                <div class="blog-post-title">
+                                    <h2>
+                                        <a href="#">
+                                                Ethical Knitwear
+                                        </a>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog_item">
+                        <div class="blog_item_container">
+                            <a href="#" class="image_frame">
+                                <div class="image-wrap text-spacing">
+                                    <img class="lazyautosizes lazyloaded" src="https://luxiders.com/wp-content/uploads/2022/07/kristina-flour-BcjdbyKWquw-unsplash-960x720.jpg">
+                                </div>
+                            </a>
+                            <div class="blog-post-description">
+                                <div class="blog-post-category">
+                                    <a href="https://luxiders.com/category/sustainable-luxury-fashion/editorial/">Editorial</a>
+                                </div>
+                                <div class="blog-post-title">
+                                    <h2>
+                                        <a href="#">
+                                                Ethical Knitwear
+                                        </a>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog_item">
+                        <div class="blog_item_container">
+                            <a href="#" class="image_frame">
+                                <div class="image-wrap text-spacing">
+                                    <img class="lazyautosizes lazyloaded" src="https://luxiders.com/wp-content/uploads/2022/07/kristina-flour-BcjdbyKWquw-unsplash-960x720.jpg">
+                                </div>
+                            </a>
+                            <div class="blog-post-description">
+                                <div class="blog-post-category">
+                                    <a href="https://luxiders.com/category/sustainable-luxury-fashion/editorial/">Editorial</a>
+                                </div>
+                                <div class="blog-post-title">
+                                    <h2>
+                                        <a href="#">
+                                                Ethical Knitwear
+                                        </a>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog_item">
+                        <div class="blog_item_container">
+                            <a href="#" class="image_frame">
+                                <div class="image-wrap text-spacing">
+                                    <img class="lazyautosizes lazyloaded" src="https://luxiders.com/wp-content/uploads/2022/07/kristina-flour-BcjdbyKWquw-unsplash-960x720.jpg">
+                                </div>
+                            </a>
+                            <div class="blog-post-description">
+                                <div class="blog-post-category">
+                                    <a href="https://luxiders.com/category/sustainable-luxury-fashion/editorial/">Editorial</a>
+                                </div>
+                                <div class="blog-post-title">
+                                    <h2>
+                                        <a href="#">
+                                                Ethical Knitwear
+                                        </a>
+                                    </h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="" class="page-load-more">
+                    <span class="button_icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="122.88px" height="122.566px" viewBox="0 0 122.88 122.566" enable-background="new 0 0 122.88 122.566" xml:space="preserve"><g><path fill-rule="evenodd" clip-rule="evenodd" d="M3.78,66.082h47.875c2.045,0,3.717,1.988,3.717,4.414v46.479 c0,2.43-1.671,4.416-3.717,4.416H3.78c-2.043,0-3.717-1.986-3.717-4.416V70.496C0.063,68.07,1.737,66.082,3.78,66.082L3.78,66.082z M71.224,0H119.1c2.046,0,3.717,1.986,3.717,4.415v46.479c0,2.429-1.671,4.413-3.717,4.413H71.224 c-2.045,0-3.714-1.984-3.714-4.413V4.415C67.51,1.986,69.179,0,71.224,0L71.224,0z M3.714,0h47.878 c2.045,0,3.717,1.986,3.717,4.415v46.479c0,2.429-1.671,4.413-3.717,4.413H3.714C1.671,55.307,0,53.323,0,50.894V4.415 C0,1.986,1.671,0,3.714,0L3.714,0z M71.287,67.26h47.876c2.043,0,3.717,1.986,3.717,4.416v46.479c0,2.426-1.674,4.412-3.717,4.412 H71.287c-2.045,0-3.717-1.986-3.717-4.412V71.676C67.57,69.246,69.242,67.26,71.287,67.26L71.287,67.26z"/></g></svg></span>
+                    <span class="button_label">Load more</span>
+                </a>
+            </div>
+        </div>
+    </body>
+
+</html>

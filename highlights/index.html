@@ -2,40 +2,39 @@
     <head>
 
         <style>
-            .one-one-blog-section{
+            .highlight-section{
                 display: grid;
-                grid-template-columns: 1fr 1fr;
-                max-height: 600px;
+                grid-template-columns: 1fr;
                 overflow: hidden;
                 max-width: 1150px;
                 margin: auto;
                 gap: 15px;
             }
 
-            .one-one-blog-section .blog_item{
+            .highlight-section .blog_item{
                 height: auto;
             }
 
-            .one-one-blog-section .blog_item img{
+            .highlight-section .blog_item img{
                 width: 100%;
             }
 
-            .one-one-blog-section .blog_item .image-wrap{
+            .highlight-section .blog_item .image-wrap{
                 position: relative;
             }
 
-            .one-one-blog-section .blog_item .blog_item_container{
+            .highlight-section .blog_item .blog_item_container{
                 height: auto;
                 position: relative;
             }
 
 
 
-            .one-one-blog-section .blog_item_container .blog-post-description{
+            .highlight-section .blog_item_container .blog-post-description{
                 padding: 10px 0;
             }
 
-            .one-one-blog-section .blog_item_container .blog-post-category a{
+            .highlight-section .blog_item_container .blog-post-category a{
                 margin-bottom: 5px;
                 font-size: 12px;
                 color: #808080;
@@ -44,26 +43,26 @@
                 line-height: 30px;
             }
 
-            .one-one-blog-section .blog_item_container .blog-post-category a:hover{
+            .highlight-section .blog_item_container .blog-post-category a:hover{
                 color: #000;
             }
 
-            .one-one-blog-section .blog_item_container .blog-post-title a{
+            .highlight-section .blog_item_container .blog-post-title a{
                 color: #4e4e4e;
                 transition: .5s ease;
 
             }
 
-            .one-one-blog-section .blog_item_container .blog-post-title a:hover{
+            .highlight-section .blog_item_container .blog-post-title a:hover{
                 color: #000;
 
             }
             
-            .one-one-blog-section .blog_item_container .blog-post-description a{
+            .highlight-section .blog_item_container .blog-post-description a{
                 text-decoration: none;   
             }
 
-            .one-one-blog-section .blog_item_container .blog-post-description h2{
+            .highlight-section .blog_item_container .blog-post-description h2{
                 font-size: 17px;
                 font-weight: 100;
                 overflow: hidden;
@@ -72,7 +71,7 @@
 
             }
 
-            .one-one-blog-section .blog_item_container .blog-post-description h2 a{
+            .highlight-section .blog_item_container .blog-post-description h2 a{
                 text-decoration: none;
                 position: relative;
                 display: block;
@@ -80,15 +79,15 @@
 
             }
 
-            .one-one-blog-section .blog_item_container .blog-post-description h2 a:hover{
+            .highlight-section .blog_item_container .blog-post-description h2 a:hover{
                 color: #000;
             }
 
-            .one-one-blog-section .image_frame{
+            .highlight-section .image_frame{
                 position: relative;
             }
 
-            .one-one-blog-section .image_frame:after{
+            .highlight-section .image_frame:after{
                 content: "";
                 display: block;
                 position: absolute;
@@ -103,14 +102,42 @@
                 transition: all .3s ease-in-out;
             }
 
-            .one-one-blog-section .image_frame:hover:after{
+            .highlight-section .image_frame:hover:after{
                 filter: alpha(opacity=100);
                 opacity: 1;
             }
 
+            .page-load-more{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                justify-content: center;
+                text-decoration: none;
+                width: 160px;
+                margin: auto;
+                border: 1px solid gray;
+                padding: 10px;
+                border-radius: 25px;
+                transition: 0.5s ease;
+            }
+
+            .page-load-more .button_icon svg{
+                width: 25px;
+                height: 25px;   
+            }
+
+            .page-load-more:hover{
+                background-color: #f3f3f3;
+            }
+
+            .page-load-more:active,
+            .page-load-more:focus{
+                color: inherit;
+            }
+
 
             @media (max-width: 767px){
-                .one-one-blog-section{
+                .highlight-section{
                     grid-template-columns: 1fr;
                     padding: 0 32px;
                 }
@@ -121,28 +148,7 @@
     <body>
         <div class="shopify-section index-section">
             <div class="page-width">
-                <div class="one-one-blog-section">
-                    <div class="blog_item">
-                        <div class="blog_item_container">
-                            <a href="#" class="image_frame">
-                                <div class="image-wrap text-spacing">
-                                    <img class="lazyautosizes lazyloaded" src="https://luxiders.com/wp-content/uploads/2022/07/kristina-flour-BcjdbyKWquw-unsplash-960x720.jpg">
-                                </div>
-                            </a>
-                            <div class="blog-post-description">
-                                <div class="blog-post-category">
-                                    <a href="https://luxiders.com/category/sustainable-luxury-fashion/editorial/">Editorial</a>
-                                </div>
-                                <div class="blog-post-title">
-                                    <h2>
-                                        <a href="#">
-                                                Ethical Knitwear
-                                        </a>
-                                    </h2>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="highlight-section">
                     <div class="blog_item">
                         <div class="blog_item_container">
                             <a href="#" class="image_frame">
@@ -168,4 +174,5 @@
             </div>
         </div>
     </body>
+
 </html>
